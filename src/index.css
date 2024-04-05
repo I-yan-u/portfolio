@@ -32,8 +32,8 @@
 }
 
 @keyframes slideIn2 {
-  from {gap: 30dvw;}
-  to {gap: 10dvw;}
+  from {gap: 30dvw;opacity: 0;}
+  to {gap: 10dvw;opacity: 1;}
 }
 
 @keyframes vBounce {
@@ -73,7 +73,7 @@
   --home-background: url(./assets/darkBG3.jpg);
 
   --slideIn: slideIn 0.8s linear 1 forwards;
-  --slideIn2: slideIn2 0.5s ease-in 1 forwards;
+  --slideIn2: slideIn2 1s ease-out 1 forwards;
   --fadeIn: fadeIn 0.8s linear 1 forwards;
   --bounce: vBounce 3s linear infinite forwards;
   --cardSlide: cardSlide 0.8s ease-out 1 forwards;
