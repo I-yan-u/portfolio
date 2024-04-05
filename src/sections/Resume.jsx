@@ -26,11 +26,29 @@ function Resume() {
   return (
     <section id='Resume' className={`${style.container} ${isVisible ? style.slidein : ''}`} ref={targetRef}>
       {/* <h2 className={style.h2}>Resume</h2> */}
-      <div className={`${style.left}`}>
+      <div className={style.left}>
         <h3 className={style.h3}>Experience</h3>
+        <p>
+
+        </p>
       </div>
-      <div className={`${style.right}`}>
+      <div className={style.right}>
         <h3 className={style.h3}>Education</h3>
+        <p>
+          <strong>University of Lagos, Akoka</strong>
+          <br />
+          Bachelor of Science in Cell Biology and Genetics.
+          <br />
+          January 2016 - November 2019
+        </p>
+        <hr />
+        <p>
+          <strong>University of Lagos, Akoka</strong>
+          <br />
+          Bachelor of Science in Cell Biology and Genetics.
+          <br />
+          January 2016 - November 2019
+        </p>
       </div>
     </section>
   )

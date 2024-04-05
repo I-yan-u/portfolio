@@ -5,3 +5,15 @@
     align-items: center;
     /* border: 1px solid #3d3d3d; */
 }
+
+.left {
+    border: 1px solid #3d3d3d;
+    width: 50%;
+    height: 100%;
+}
+
+.right {
+    border: 1px solid #3d3d3d;
+    width: 50%;
+    height: 100%;
+}

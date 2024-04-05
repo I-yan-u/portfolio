@@ -37,7 +37,7 @@ function Home() {
             </div>
             <div ref={paraRef} className={style.right_div}>
                 <p className={`${isVisible ? style.para_slidein : ''}`}>Hi, I`m <span>Iyanu Ajimobi</span></p>
-                <p className={`${isVisible ? style.para_slidein : ''}`}>This is my portfolio page</p>
+                <p className={`${isVisible ? style.para_slidein : ''}`}>This is my portfolio page.</p>
             </div>
             <a href='#Portfolio'>
                 <div className={style.div_arrow}>

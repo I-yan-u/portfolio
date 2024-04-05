@@ -13,16 +13,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     border-radius: 5px;
     background-color: var(--input);
     height: 70dvh;
     width: 30dvw;
-    opacity: 1;
 }
 
 .h3 {
     position: relative;
-    top: -30dvh;
+    top: -10dvh;
     left: -10dvw;
 }
 

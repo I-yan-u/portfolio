@@ -19,6 +19,7 @@ const PortfolioCard = props => {
     const [url, setUrl] = useState('');
     const [createdAt, setCreatedAt] = useState('');
     const [updatedAt, setUpdatedAt] = useState('');
+    const [description, setDescription] = useState('');
     const [bgImage, setBgImage] = useState(null);
 
 
@@ -39,6 +40,7 @@ const PortfolioCard = props => {
         setLikes(data.stargazers_count);
         setUrl(data.html_url);
         setLang(data.language);
+        setDescription(data.description);
         switch (data.name) {
             case 'SurveyApp':
                 setBgImage(<SurveyAppIcon />)
@@ -66,6 +68,7 @@ const PortfolioCard = props => {
                 <p><ProgramLanguage /><span>Language:</span> {lang}</p>
                 <p><CalenderIcon /><span>Create at:</span> {createdAt}</p>
                 <p><CalenderIcon /><span>Last change:</span> {updatedAt}</p>
+                <p><span>Description:</span> {description}</p>
             </div>
             <button className={style.button}><a href={url}>Link</a></button>
         </div>

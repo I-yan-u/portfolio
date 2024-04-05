@@ -38,6 +38,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    max-width: 80%;
 }
 
 .button {
@@ -52,6 +53,10 @@
 .text > p > span {
     font-weight: bold;
     font-size: 16px;
+}
+
+.text > p:last-child {
+    white-space: normal;
 }
 
 .blank {
