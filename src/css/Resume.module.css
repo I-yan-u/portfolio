@@ -1,0 +1,61 @@
+.container {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30dvw;
+    /* border: 1px solid #3d3d3d; */
+    overflow: hidden;
+}
+
+.left,
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--input);
+    height: 70dvh;
+    width: 30dvw;
+}
+
+.h3 {
+    position: relative;
+    top: -30dvh;
+    left: -10dvw;
+}
+
+.left::before,
+.right::before {
+    content: '';
+    position: absolute;
+    top: 214dvh;
+    border-radius: 5px;
+    background-color: var(--portcardbg);
+    height: 70dvh;
+    width: 30dvw;
+    z-index: -1;
+    transition: transform 0.25s;
+}
+
+.left::before {
+    left: 15.5dvw;
+}
+.right::before {
+    left: 55.5dvw;
+}
+
+.left:hover::before,
+.right:hover::before {
+    transform: translate(5px, -5px);
+}
+
+.slidein {
+    animation: var(--slideIn2);
+}
+
+.h2 {
+    font-size: 2.3em;
+    position: absolute;
+    top: 195dvh;
+}

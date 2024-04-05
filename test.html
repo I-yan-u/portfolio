@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scroll Position Example</title>
+    <style>
+        /* Styling for demonstration purposes */
+        #content {
+            height: 2000px; /* Add enough content to enable scrolling */
+            overflow-y: scroll; /* Enable vertical scrolling for the content */
+        }
+        #indicator {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">
+    <!-- Content here -->
+    <div style="height: 3000px;">Scrollable content</div>
+</div>
+
+<div id="indicator">Scroll position: <span id="scrollPosition">0</span> pixels</div>
+
+<script>
+    // Get the element to monitor for scroll position
+    const contentElement = document.getElementById('content');
+    // Get the element to display the scroll position
+    const scrollIndicator = document.getElementById('scrollPosition');
+
+    // Function to update scroll position
+    function updateScrollPosition() {
+        // Get the current scroll position of the content element
+        const scrollY = contentElement.scrollTop;
+        
+        // Update the text content of the indicator element
+        scrollIndicator.textContent = scrollY;
+        
+        // Example: Change background color based on scroll position
+        if (scrollY > 0) {
+            document.body.style.backgroundColor = 'lightblue';
+        } else {
+            document.body.style.backgroundColor = '';
+        }
+    }
+
+    // Add event listener for scroll events on the content element
+    contentElement.addEventListener('scroll', updateScrollPosition);
+
+    // Initial call to update scroll position when the page loads
+    updateScrollPosition();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+.container {
+    height: 80dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid var(--input);
+    border-top-left-radius: 50px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form {
+    width: 60dvw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.form > input,
+.form > textarea {
+    width: 40dvw;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--input);
+    background-color: var(--input);
+    color: var(--input-font);
+    transition: border 0.3s;
+}
+
+.form > input:hover, 
+.form > input:focus,
+.form > textarea:focus,
+.form > textarea:hover {
+    border-color: var(--input-border);
+    outline: none;
+}
+
+.form > button {
+    margin: 5px 0;
+    position: relative;
+    left: -230px;
+}
+
+.form > p { 
+    position: relative;
+    left: -200px;
+    top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 40dvw;
+}
+
+.contacts > h3 {
+    position: relative;
+    left: 0;
+    top: -12px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70dvw;
+    margin: 10px 15dvw;
+}
+
+.socials > div {
+    background-color: var(--input);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    transition: top 0.35s;
+}
+
+.socials > div:hover {
+    top: -5px;
+}
+
+.footerCredit {
+    position: relative;
+    left: calc((1366px / 2) - (303px / 2) );
+}

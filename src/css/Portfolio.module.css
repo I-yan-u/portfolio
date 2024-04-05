@@ -1,0 +1,30 @@
+.container {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4dvw;
+    /* border: 1px solid #0a0a0a; */
+}
+
+.h2 {
+    font-size: 2.3em;
+    position: absolute;
+    top: calc(100dvh + 30px);
+    opacity: 0;
+}
+
+.cards {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4dvw;
+    opacity: 0;
+}
+
+.fadein {
+    animation: var(--cardSlide);
+}
