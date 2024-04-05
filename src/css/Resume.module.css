@@ -30,8 +30,8 @@
     content: '';
     position: absolute;
     top: 214dvh;
+    border: 3px solid var(--portcardbg);
     border-radius: 5px;
-    background-color: var(--portcardbg);
     height: 70dvh;
     width: 30dvw;
     z-index: -1;
