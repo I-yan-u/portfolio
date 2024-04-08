@@ -48,7 +48,7 @@
 
 @keyframes cardSlide {
   from {
-    gap: 0; opacity: 0;
+    gap: 0; opacity: 0.2;
   }
   to {
     gap: 4dvw; opacity: 1;
@@ -76,7 +76,7 @@
   --slideIn2: slideIn2 1s ease-out 1 forwards;
   --fadeIn: fadeIn 0.8s ease-in 1 forwards;
   --bounce: vBounce 3s linear infinite forwards;
-  --cardSlide: cardSlide 0.8s ease-out 1 forwards;
+  --cardSlide: cardSlide 1s ease-out 1 forwards;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -132,6 +132,11 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+hr {
+  width: 80%;
+  opacity: 0.5;
 }
 
 /* @media (prefers-color-scheme: light) {

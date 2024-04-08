@@ -1,64 +1,107 @@
 .container {
-    height: 100dvh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30dvw;
-    /* border: 1px solid #3d3d3d; */
+    /* align-items: center; */
     overflow: hidden;
+    flex-direction: row;
+    gap: 20px;
 }
 
-.left,
-.right {
+.qualifications {
     display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
+    margin: 40px 0;
+    width: 45%;
+    height: 180dvh;
+}
+
+.experience, 
+.education {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin: 20px 0;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     border-radius: 5px;
     background-color: var(--input);
-    height: 70dvh;
-    width: 30dvw;
+    width: 40dvw;
+    height: max-content;
+    margin: 10px 0;
+    padding: 15px;
+    position: relative;
 }
 
 .h3 {
     position: relative;
-    top: -10dvh;
-    left: -10dvw;
+    font-size: 24px;
+    left: -28%;
 }
 
-.left::before,
-.right::before {
+.card::before {
     content: '';
     position: absolute;
-    top: 214dvh;
     border: 3px solid var(--portcardbg);
     border-radius: 5px;
-    height: 68dvh;
-    width: 30dvw;
+    width: 40dvw;
+    height: 100%;
     z-index: -10;
     opacity: 0.5;
     transition: transform 0.25s, opacity 0.25s;
+    transform: translate(-10px, -10px);
 }
 
-.left::before {
-    left: 15.5dvw;
-}
-.right::before {
-    left: 55.5dvw;
-}
-
-.left:hover::before,
-.right:hover::before {
-    transform: translate(5px, -5px);
+.card:hover::before{
+    transform: translate(-5px, -5px);
     opacity: 1;
 }
 
-.slidein {
-    animation: var(--slideIn2);
+.skill_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 50dvw;
+    background-color: var(--input);
+    height: 150dvh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-.h2 {
-    font-size: 2.3em;
-    position: absolute;
-    top: 195dvh;
+.span_timeline {
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.6;
+    margin-left: 3dvw;
+}
+
+.span_para {
+    font-size: 14px;
+    opacity: 0.9;
+    /* margin: 5px 0; */
+}
+
+.span_role {
+    font-size: 12px;
+    opacity: 0.6;
+    margin: 5px 0;
+}
+
+
+.slidein {
+    /* animation: var(--slideIn2); */
 }

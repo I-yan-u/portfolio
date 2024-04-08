@@ -10,6 +10,8 @@ import ProgramLanguage from "./ProgramLanguage";
 import LikeLogo from "./LikeLogo";
 import NameLogo from "./NameLogo";
 import CalenderIcon from "./CalenderIcon";
+import CancelIcon from "./CancelIcon";
+import MenuIcon from "./MenuIcon";
 
 export { 
     MoonIcon, 
@@ -24,4 +26,6 @@ export {
     LikeLogo,
     NameLogo,
     CalenderIcon,
+    CancelIcon,
+    MenuIcon,
 };

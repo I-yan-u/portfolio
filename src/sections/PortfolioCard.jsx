@@ -30,10 +30,10 @@ const PortfolioCard = props => {
 
     useEffect(() => {
         const setdate = async () => {
-        const updt = await convertDate(data.updated_at);
-        const crdt = await convertDate(data.created_at);
-        setCreatedAt(crdt);
-        setUpdatedAt(updt);
+            const updt = await convertDate(data.updated_at);
+            const crdt = await convertDate(data.created_at);
+            setCreatedAt(crdt);
+            setUpdatedAt(updt);
         };
         setdate();
         setName(data.name);
