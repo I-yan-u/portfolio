@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 4dvw;
     /* border: 1px solid #0a0a0a; */
 }
@@ -18,14 +17,32 @@
 
 .cards {
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 0;
     opacity: 0.2;
 }
 
 .fadein {
     animation: var(--cardSlide);
+}
+
+@media screen and (max-width: 1200px){
+    .container {
+        flex-direction: column;
+        height: max-content;
+        margin: 30px 0;
+    }
+
+    .cards {
+        margin: 60px 0;
+    }
+
+    .h2 {
+        top: 100dvh;
+    }
 }
