@@ -91,7 +91,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .overlay {
-        background-color: rgba(0, 0, 0, 0.2);
+    .container {
+        background: var(--input);
     }
 }
