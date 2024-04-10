@@ -33,7 +33,6 @@
 
 @media screen and (max-width: 1200px){
     .container {
-        flex-direction: column;
         height: max-content;
         margin: 30px 0;
     }
@@ -42,7 +41,10 @@
         margin: 60px 0;
     }
 
+}
+
+@media screen and (max-width: 1000px){
     .h2 {
-        top: 100dvh;
+        top: 69dvh;
     }
 }

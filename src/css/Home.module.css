@@ -93,5 +93,28 @@
 @media screen and (max-width: 1000px) {
     .container {
         background: var(--input);
+        height: 70dvh;
+        /* background-image: none; */
+    }
+
+    .overlay {
+        height: 70dvh;
+    }
+
+    .left_div {
+        width: 100%;
+    }
+
+    .right_div {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .right_div > p {
+        font-size: 28px;
+    }
+    
+    .right_div > p > span {
+        font-size: 24px;
     }
 }

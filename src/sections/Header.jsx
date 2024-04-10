@@ -1,5 +1,6 @@
 // import React from 'react'
 import style from '../css/Header.module.css';
+import '../css/toggleswitch.css';
 import { useEffect, useState } from 'react';
 import { MoonIcon, SunIcon } from '../assets';
 import darkBG from '../assets/darkBG3.jpg';
@@ -9,6 +10,7 @@ import lightBG from '../assets/lightBG.jpg';
 function Header() {
   const [darkMode, setMode] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
+  const [navToggle, setNavToggle] = useState(false);
 
   const toggleMode = () => {
     setMode(!darkMode);
@@ -76,11 +78,25 @@ function Header() {
     };
   }, [])
 
+  const dropDown = (event) => {
+    const isChecked = event.target.checked;
+    setNavToggle(isChecked);
+    // console.log(isChecked);
+  }
+
 
   return (
     <>
       <nav className={style.nav}>
-        <ul className={style.navbar} >
+        <div className={style.toggle}>
+          <input type="checkbox" id="checkbox" className={style.checked} onClick={event => dropDown(event)} />
+            <label htmlFor="checkbox" className="toggle">
+                <div className="bars" id="bar1"></div>
+                <div className="bars" id="bar2"></div>
+                <div className="bars" id="bar3"></div>
+            </label>
+        </div>
+        <ul className={`${style.navbar} ${navToggle ? style.nav_drop : ''}`} id='navbar'>
           <li className={`${style.list} ${activeLink === 'Home' ? style.active: ''}`}>
             <a href="#Home">Home</a>
           </li>
