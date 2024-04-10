@@ -71,12 +71,13 @@
         display: none;
         /* display: flex; */
         flex-direction: column;
-        gap: 2dvh;
+        gap: 0dvh;
         background-color: var(--body-dark);
         margin-top: 0;
         padding-top: 15px;
         padding-bottom: 15px;
         height: max-content;
+        opacity: 0;
     }
 
     .icons {
@@ -90,4 +91,5 @@
 .nav_drop {
     display: flex;
     flex-direction: column;
-} 
+    animation: var(--slideDown);
+}

@@ -81,7 +81,6 @@ function Header() {
   const dropDown = (event) => {
     const isChecked = event.target.checked;
     setNavToggle(isChecked);
-    // console.log(isChecked);
   }
 
 
