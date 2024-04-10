@@ -71,7 +71,7 @@
         display: none;
         /* display: flex; */
         flex-direction: column;
-        gap: 0dvh;
+        gap: 0svh;
         background-color: var(--body-dark);
         margin-top: 0;
         padding-top: 15px;

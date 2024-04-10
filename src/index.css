@@ -60,7 +60,7 @@
     opacity: 0;gap: 0;
   }
   to {
-    opacity: 1;gap: 2dvh;
+    opacity: 1;gap: 2svh;
   }
 }
 
@@ -86,7 +86,7 @@
   --fadeIn: fadeIn 0.8s ease-in 1 forwards;
   --bounce: vBounce 3s linear infinite forwards;
   --cardSlide: cardSlide 1s ease-out 1 forwards;
-  --slideDown: slideDown 0.8s ease-in 1 forwards;
+  --slideDown: slideDown 0.5s ease-in 1 forwards;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

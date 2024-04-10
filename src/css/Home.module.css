@@ -93,12 +93,12 @@
 @media screen and (max-width: 1000px) {
     .container {
         background: var(--input);
-        height: 70dvh;
+        height: 70svh;
         /* background-image: none; */
     }
 
     .overlay {
-        height: 70dvh;
+        height: 70svh;
     }
 
     .left_div {
