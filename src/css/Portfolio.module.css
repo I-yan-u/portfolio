@@ -39,16 +39,24 @@
 
     .cards {
         margin: 60px 0;
+        gap: 4svh;
+        opacity: 0;
     }
-/* 
+
     .h2 {
-        top: 101dvh;
-    } */
+        top: 101svh;
+        opacity: 0;
+    }
+
+    .fadein {
+        animation: var(--fadeInP);
+        animation-delay: 0.3s;
+    }
 
 }
 
 @media screen and (max-width: 1000px){
     .h2 {
-        top: 69dvh;
+        top: 69svh;
     }
 }

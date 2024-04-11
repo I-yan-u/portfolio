@@ -85,6 +85,7 @@
   --slideIn: slideIn 0.8s ease-out 1 forwards;
   --slideIn2: slideIn2 1s ease-out 1 forwards;
   --fadeIn: fadeIn 0.8s ease-in 1 forwards;
+  --fadeInP: fadeIn 1.5s ease-out 1 forwards;
   --bounce: vBounce 3s linear infinite forwards;
   --cardSlide: cardSlide 1s ease-out 1 forwards;
   --slideDown: slideDown 0.5s ease-in 1 forwards;
