@@ -19,9 +19,55 @@
     /* border: 1px solid #3d3d3d; */
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.right > h3 > span {
+    font-weight: bolder;
+}
+
+.right > h3 {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.right > p {
+    white-space: wrap;
+    text-align: justify;
+    width: 70%;
+    font-size: 20px;
+    font-weight: light;
+    /* opacity: 0.95; */
+}
+
+.right > button {
+    display: flex;
 }
 
 .image {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        height: max-content;
+        padding: 20px 0;
+        gap: 2svh;
+    }
+
+    .left, .right {
+        margin-bottom: 10px;
+        width: 85%;
+    }
+
+    /* .image {
+        width: 25svw;
+        height: 25svh;
+    } */
 }
