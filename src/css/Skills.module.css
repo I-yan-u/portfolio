@@ -1,0 +1,50 @@
+.skill {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 80%;
+    position: relative;
+}
+
+.skill > div {
+    position: absolute;
+    left: 20%;
+    margin: 5px 0;
+}
+
+.levelbar_bg {
+    width: 60%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: var(--skillbg);
+    margin-left: 20px;
+    position: relative;
+}
+
+.levelbar_percentage {
+    position: absolute;
+    left: calc(50% - 16px);
+    top: 0;
+    font-size: 16px;
+    margin: 0 0;
+    z-index: 5;
+}
+
+.levelbar_fg {
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--input-border);
+}
+
+#python > div > span {
+    width: 90%;
+}
+
+@media screen and (max-width: 600px) {
+    .skill > div {
+        left: 30%;
+    }
+}

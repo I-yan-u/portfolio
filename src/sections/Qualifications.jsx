@@ -43,18 +43,18 @@ function Qualifications() {
                 <p>
                     <strong>ALX SWE Program</strong>
                     <br />
-                    Software Engineering certificate.
+                    <span className={style.span_para}>Software Engineering certificate.</span>
                     <br />
-                    September 2022 - January 2024
+                    <span className={style.span_para}>September 2022 - January 2024</span>
                 </p>
             </div>
             <div className={style.card}>
                 <p>
                     <strong>University of Lagos, Akoka</strong>
                     <br />
-                    Bachelor of Science in Cell Biology and Genetics.
+                    <span className={style.span_para}>Bachelor of Science in Cell Biology and Genetics.</span>
                     <br />
-                    January 2016 - November 2019
+                    <span className={style.span_para}>January 2016 - November 2019</span>
                 </p>
             </div>
         </div>

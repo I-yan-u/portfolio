@@ -28,6 +28,7 @@ function Header() {
       r.style.setProperty('--input-border', '#646cff');
       r.style.setProperty('--home-background', `url(${darkBG})`);
       r.style.setProperty('--portcardbg', '#3a3a3a');
+      r.style.setProperty('--skillbg', '#3a3a3a');
     } else {
       // Light theme!!!
       r.style.setProperty('--body-dark', '#ffffff');
@@ -41,6 +42,7 @@ function Header() {
       r.style.setProperty('--input-border', '#7ed0ec');
       r.style.setProperty('--home-background', `url(${lightBG})`);
       r.style.setProperty('--portcardbg', '#dddddd');
+      r.style.setProperty('--skillbg', 'rgba(41, 41, 41, 0.15)');
     }
   }
 
