@@ -43,6 +43,34 @@
     width: 90%;
 }
 
+#nodejs > div > span {
+    width: 75%;
+}
+
+#html > div > span {
+    width: 80%;
+}
+
+#css > div > span {
+    width: 75%;
+}
+
+#react > div > span {
+    width: 80%;
+}
+
+#mongodb > div > span {
+    width: 75%;
+}
+
+#mysql > div > span {
+    width: 80%;
+}
+
+#cpp > div > span {
+    width: 60%;
+}
+
 @media screen and (max-width: 600px) {
     .skill > div {
         left: 30%;

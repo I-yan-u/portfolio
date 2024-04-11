@@ -54,6 +54,13 @@ function Skills() {
           <span className={sStyle.levelbar_fg}></span>
         </div>
       </div>
+      <div className={sStyle.skill} id={sStyle.cpp}>
+        <p>C/C++</p>
+        <div className={sStyle.levelbar_bg}>
+          <p className={sStyle.levelbar_percentage}>60%</p>
+          <span className={sStyle.levelbar_fg}></span>
+        </div>
+      </div>
     </div>
   )
 }
