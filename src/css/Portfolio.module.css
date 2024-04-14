@@ -31,6 +31,18 @@
     animation: var(--cardSlide);
 }
 
+@media screen and (max-width: 1230px){
+    .fadein {
+        animation: var(--fadeInP);
+        animation-delay: 0.3s;
+    }
+    .cards {
+        margin: 60px 0;
+        gap: 3svh;
+        opacity: 0;
+    }
+}
+
 @media screen and (max-width: 1200px){
     .container {
         height: max-content;
@@ -39,7 +51,7 @@
 
     .cards {
         margin: 60px 0;
-        gap: 4svh;
+        gap: 3svh;
         opacity: 0;
     }
 
@@ -57,6 +69,6 @@
 
 @media screen and (max-width: 1000px){
     .h2 {
-        top: 69svh;
+        top: 98svh;
     }
 }
