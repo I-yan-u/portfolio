@@ -60,7 +60,7 @@
     opacity: 0;gap: 0;
   }
   to {
-    opacity: 1;gap: 2svh;
+    opacity: 1;gap: 4svh;
   }
 }
 
