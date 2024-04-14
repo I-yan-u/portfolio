@@ -111,6 +111,7 @@
 @media screen and (max-width: 1200px){
     .container {
         flex-direction: column;
+        height: max-content;
     }
     .qualifications {
         width: 100%;

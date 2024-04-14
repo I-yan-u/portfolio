@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 1200px) {
     .container {
-        margin-top: 10px;
+        margin-top: 40px;
         flex-direction: column;
         height: max-content;
         padding: 20px 0;
