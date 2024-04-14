@@ -112,6 +112,7 @@
     .container {
         flex-direction: column;
         height: max-content;
+        margin-bottom: 40px;
     }
     .qualifications {
         width: 100%;
