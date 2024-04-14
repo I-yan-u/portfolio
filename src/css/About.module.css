@@ -55,6 +55,7 @@
 
 @media screen and (max-width: 1200px) {
     .container {
+        margin-top: 10px;
         flex-direction: column;
         height: max-content;
         padding: 20px 0;
@@ -63,11 +64,10 @@
 
     .left, .right {
         margin-bottom: 10px;
-        width: 85%;
+        width: 100%;
     }
 
-    /* .image {
-        width: 25svw;
-        height: 25svh;
-    } */
+    .right > p {
+        width: 85%;
+    }
 }
