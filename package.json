@@ -12,10 +12,12 @@
   "dependencies": {
     "@hugeicons/react-pro": "^0.2.3",
     "axios": "^1.6.8",
+    "nodemailer": "^6.9.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.14",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
