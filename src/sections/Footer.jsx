@@ -6,7 +6,7 @@ import axios from 'axios';
 
 function Footer() {
   const [email, setEmail] = useState('');
-  // const [name, setName] = useState('');
+  const [name, setName] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
@@ -14,7 +14,8 @@ function Footer() {
     const data = {
       sender: email,
       subject,
-      text: message
+      text: message,
+      name,
     }
     try {
       const response = await axios.post('https://mailer-gamma-gules.vercel.app/send', data);
@@ -31,7 +32,7 @@ function Footer() {
       <footer className={style.footer}>
         <div className={style.form}>
           <p>Get In Touch</p>
-          <input type="text" placeholder='Your Name'/>
+          <input onChange={e => setName(e.target.value)} type="text" placeholder='Your Name'/>
           <input onChange={e => setEmail(e.target.value)} type="email" placeholder='Your Email'/>
           <input onChange={e => setSubject(e.target.value)} type="text" placeholder='Your Subject'/>
           <textarea rows={5} onChange={e => setMessage(e.target.value)} placeholder='Enter your message'></textarea>
