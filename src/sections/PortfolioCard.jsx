@@ -24,8 +24,12 @@ const PortfolioCard = props => {
 
 
     const convertDate = (datetime) => {
-        const date = datetime.split('T')[0];
-        return date;
+        const date = new Date(datetime);
+        let finalDate = '';
+        finalDate += date.getDate() + '-';
+        finalDate += date.getMonth() + '-';
+        finalDate += date.getFullYear() + ' ';
+        return finalDate;
     }
 
     useEffect(() => {
