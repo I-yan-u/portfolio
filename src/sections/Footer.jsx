@@ -18,13 +18,13 @@ function Footer() {
       name,
     }
     try {
-      const response = await axios.post('https://mailer-gamma-gules.vercel.app/send', data);
+      const response = await axios.post('https://yandev-mailer.vercel.app/send', data);
       if (response.status === 200) {
         alert('Message sent successfully');
       }
     } catch (error) {
-      alert('Message failed to send');
       console.log(error.message);
+      alert('Message failed to send');
     }
   }
 
