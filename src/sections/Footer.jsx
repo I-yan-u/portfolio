@@ -24,6 +24,7 @@ function Footer() {
       }
     } catch (error) {
       alert('Message failed to send');
+      console.log(error.message);
     }
   }
 
