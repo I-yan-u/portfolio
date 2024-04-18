@@ -113,6 +113,8 @@
         flex-direction: column;
         height: max-content;
         margin-bottom: 40px;
+        justify-content: flex-start;
+        gap: 5svh;
     }
     .qualifications {
         width: 100%;
@@ -128,6 +130,7 @@
         position: relative;
         top: 0;
         left: 0;
+        overflow-y: scroll;
     }
 
     .card {
