@@ -85,18 +85,19 @@
         right: 0;
         left: 85%;
     }
+
+    /* Navbar dropdown */
+    .nav_drop {
+        display: flex;
+        flex-direction: column;
+        animation: var(--slideDown);
+    }
+
+    /* Navbar slide up */
+    .nav_up {
+        display: flex;
+        flex-direction: column;
+        animation: var(--slideUp);
+    }
 }
 
-/* Navbar dropdown */
-.nav_drop {
-    display: flex;
-    flex-direction: column;
-    animation: var(--slideDown);
-}
-
-/* Navbar slide up */
-.nav_up {
-    display: flex;
-    flex-direction: column;
-    animation: var(--slideUp);
-}
