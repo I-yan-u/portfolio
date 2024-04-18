@@ -2,20 +2,28 @@
 import style from '../css/Contact.module.css'
 import { Twitter, Linkedln, Github } from '../assets'
 import { useState } from 'react';
+import axios from 'axios';
 
 function Footer() {
   const [email, setEmail] = useState('');
+  // const [name, setName] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
-  const sendEmail = async (sender, subject, text) => {
-    return [sender, subject, text];
-  }
-
-  const SendMail = () => {
-    console.log(email, subject, message);
-    const [status, response] = sendEmail(email, subject, message);
-    console.log(status, response);
+  const sendEmail = async () => {
+    const data = {
+      sender: email,
+      subject,
+      text: message
+    }
+    try {
+      const response = await axios.post('https://mailer-gamma-gules.vercel.app/send', data);
+      if (response.status === 200) {
+        alert('Message sent successfully');
+      }
+    } catch (error) {
+      alert('Message failed to send');
+    }
   }
 
   return (
@@ -27,7 +35,7 @@ function Footer() {
           <input onChange={e => setEmail(e.target.value)} type="email" placeholder='Your Email'/>
           <input onChange={e => setSubject(e.target.value)} type="text" placeholder='Your Subject'/>
           <textarea rows={5} onChange={e => setMessage(e.target.value)} placeholder='Enter your message'></textarea>
-          <button onClick={SendMail}>Submit</button>
+          <button onClick={sendEmail}>Submit</button>
         </div>
         <div className={style.contacts}>
           <h3>Contacts</h3>
