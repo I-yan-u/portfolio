@@ -64,6 +64,15 @@
   }
 }
 
+@keyframes slideUp {
+  from {
+    opacity: 1;gap: 4svh;
+  }
+  to {
+    opacity: 0;gap: 0;
+  }
+}
+
 
  :root {
   --test: rgba(41, 41, 41, 0.342);
@@ -89,6 +98,7 @@
   --bounce: vBounce 3s linear infinite forwards;
   --cardSlide: cardSlide 1s ease-out 1 forwards;
   --slideDown: slideDown 0.5s ease-in 1 forwards;
+  --slideUp: slideUp 0.25s ease-out 1 forwards;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

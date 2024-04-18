@@ -93,3 +93,10 @@
     flex-direction: column;
     animation: var(--slideDown);
 }
+
+/* Navbar slide up */
+.nav_up {
+    display: flex;
+    flex-direction: column;
+    animation: var(--slideUp);
+}

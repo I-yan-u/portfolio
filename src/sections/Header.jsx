@@ -1,7 +1,7 @@
 // import React from 'react'
 import style from '../css/Header.module.css';
 import '../css/toggleswitch.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { MoonIcon, SunIcon } from '../assets';
 import darkBG from '../assets/darkBG3.jpg';
 import lightBG from '../assets/lightBG.jpg';
@@ -11,6 +11,7 @@ function Header() {
   const [darkMode, setMode] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
   const [navToggle, setNavToggle] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMode = () => {
     setMode(!darkMode);
@@ -86,32 +87,37 @@ function Header() {
   }
 
 
+  const navLinkClick = (menuRef) => {
+    setNavToggle(!navToggle);
+    menuRef.current.checked = false;
+  }
+
   return (
     <>
       <nav className={style.nav}>
         <div className={style.toggle}>
-          <input type="checkbox" id="checkbox" className={style.checked} onClick={event => dropDown(event)} />
+          <input ref={menuRef} type="checkbox" id="checkbox" className={style.checked} onClick={event => dropDown(event)} />
             <label htmlFor="checkbox" className="toggle">
                 <div className="bars" id="bar1"></div>
                 <div className="bars" id="bar2"></div>
                 <div className="bars" id="bar3"></div>
             </label>
         </div>
-        <ul className={`${style.navbar} ${navToggle ? style.nav_drop : ''}`} id='navbar'>
+        <ul className={`${style.navbar} ${navToggle ? style.nav_drop : style.nav_up}`} id='navbar'>
           <li className={`${style.list} ${activeLink === 'Home' ? style.active: ''}`}>
-            <a href="#Home">Home</a>
+            <a onClick={() => navLinkClick(menuRef)} href="#Home">Home</a>
           </li>
           <li className={`${style.list} ${activeLink === 'Portfolio' ? style.active: ''}`}>
-            <a href="#Portfolio">Portfolio</a>
+            <a onClick={() => navLinkClick(menuRef)} href="#Portfolio">Portfolio</a>
           </li>
           <li className={`${style.list} ${activeLink === 'Resume' ? style.active: ''}`}>
-            <a href="#Resume">Resume</a>
+            <a onClick={() => navLinkClick(menuRef)} href="#Resume">Resume</a>
           </li>
           <li className={`${style.list} ${activeLink === 'About' ? style.active: ''}`}>
-            <a href="#About">About</a>
+            <a onClick={() => navLinkClick(menuRef)} href="#About">About</a>
           </li>
           <li className={`${style.list} ${activeLink === 'Contact' ? style.active: ''}`}>
-            <a href="#Contact">Contact</a>
+            <a onClick={() => navLinkClick(menuRef)} href="#Contact">Contact</a>
           </li>
         </ul>
         <div onClick={toggleMode} className={style.icons}>
