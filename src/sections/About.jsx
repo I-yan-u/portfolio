@@ -1,6 +1,7 @@
 // import React from 'react'
 import style from '../css/About.module.css';
 import iyanuImg from '../assets/iyanuImg.jpg';
+import CV from '../../public/Resume_2024-04-18_Iyanu_Ajimobi.pdf';
 
 function About() {
   return (
@@ -17,7 +18,7 @@ function About() {
           minded and keen to learn new things. Excited to get my feet
           on the ground in the world of tech and making an impact.
         </p>
-        <button>Download CV</button>
+        <button><a href={CV} download='Iyanu-ajimobi-cv.pdf'>Download CV</a></button>
       </div>
     </section>
   )

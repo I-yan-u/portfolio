@@ -48,6 +48,10 @@
     display: flex;
 }
 
+.right > button > a {
+    color: #ffffffcc;
+}
+
 .image {
     width: 60%;
     height: 60%;
