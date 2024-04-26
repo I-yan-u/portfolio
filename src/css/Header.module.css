@@ -44,7 +44,7 @@
 }
 
 .icons:hover {
-    transform: scale(1.2, 1.2) rotate(270deg);
+    transform: scale(1.2, 1.2) rotate(30deg);
     opacity: 0.8;
 }
 
@@ -60,6 +60,7 @@
 @media screen and (max-width: 600px) {
     .toggle {
         display: flex;
+        z-index: 15;
     }
 
     .nav {
@@ -76,7 +77,7 @@
         margin-top: 0;
         padding-top: 15px;
         padding-bottom: 15px;
-        height: 70svh;
+        height: 100svh;
         opacity: 0;
     }
 
@@ -84,6 +85,7 @@
         position: absolute;
         right: 0;
         left: 85%;
+        z-index: 15;
     }
 
     /* Navbar dropdown */
@@ -91,6 +93,7 @@
         display: flex;
         flex-direction: column;
         animation: var(--slideDown);
+        z-index: 10;
     }
 
     /* Navbar slide up */
@@ -98,6 +101,14 @@
         display: flex;
         flex-direction: column;
         animation: var(--slideUp);
+    }
+
+    .a_enable {
+        display: flex;
+    }
+
+    .a_disable {
+        display: none;
     }
 }
 

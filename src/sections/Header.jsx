@@ -105,19 +105,19 @@ function Header() {
         </div>
         <ul className={`${style.navbar} ${navToggle ? style.nav_drop : style.nav_up}`} id='navbar'>
           <li className={`${style.list} ${activeLink === 'Home' ? style.active: ''}`}>
-            <a onClick={() => navLinkClick(menuRef)} href="#Home">Home</a>
+            <a onClick={() => navLinkClick(menuRef)} href="#Home" className={navToggle ? style.a_enable : style.a_disable}>Home</a>
           </li>
           <li className={`${style.list} ${activeLink === 'Portfolio' ? style.active: ''}`}>
-            <a onClick={() => navLinkClick(menuRef)} href="#Portfolio">Portfolio</a>
+            <a onClick={() => navLinkClick(menuRef)} href="#Portfolio" className={navToggle ? style.a_enable : style.a_disable}>Portfolio</a>
           </li>
           <li className={`${style.list} ${activeLink === 'Resume' ? style.active: ''}`}>
-            <a onClick={() => navLinkClick(menuRef)} href="#Resume">Resume</a>
+            <a onClick={() => navLinkClick(menuRef)} href="#Resume" className={navToggle ? style.a_enable : style.a_disable}>Resume</a>
           </li>
           <li className={`${style.list} ${activeLink === 'About' ? style.active: ''}`}>
-            <a onClick={() => navLinkClick(menuRef)} href="#About">About</a>
+            <a onClick={() => navLinkClick(menuRef)} href="#About" className={navToggle ? style.a_enable : style.a_disable}>About</a>
           </li>
           <li className={`${style.list} ${activeLink === 'Contact' ? style.active: ''}`}>
-            <a onClick={() => navLinkClick(menuRef)} href="#Contact">Contact</a>
+            <a onClick={() => navLinkClick(menuRef)} href="#Contact" className={navToggle ? style.a_enable : style.a_disable}>Contact</a>
           </li>
         </ul>
         <div onClick={toggleMode} className={style.icons}>
