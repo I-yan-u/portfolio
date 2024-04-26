@@ -1,8 +1,31 @@
 import style from '../css/Resume.module.css';
+import { useState, useEffect, useRef } from 'react';
 
 function Qualifications() {
+  const [isVisible, setIsVisible] = useState(false);
+  const targetRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsVisible(entry.isIntersecting)
+    },
+    {threshold: 0.5}
+    );
+
+    const target = targetRef.current;
+    if(target){
+        observer.observe(target);
+    }
+
+    return () => {
+        if (target) {
+            observer.unobserve(target);
+        }
+    }
+  }, [])
+
   return (
-    <>
+    <div ref={targetRef} className={isVisible ? '':''}>
         <div className={`${style.experience}`}>
           <h3 className={style.h3}>Experience</h3>
           <div className={style.card}>
@@ -58,7 +81,7 @@ function Qualifications() {
                 </p>
             </div>
         </div>
-    </>
+    </div>
   )
 }
 
